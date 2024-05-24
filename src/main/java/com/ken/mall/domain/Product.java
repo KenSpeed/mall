@@ -18,6 +18,7 @@ public class Product {
     private String sku;
     private String description;
     private String category;
+    private int stock;
 
     public Product() {
     }
@@ -84,5 +85,13 @@ public class Product {
 
     public void setCategory(String category) {
         this.category = category;
+    }
+
+    public int getStock() {
+        return stock;
+    }
+
+    public void setStock(int stock) {
+        this.stock = stock;
     }
 }

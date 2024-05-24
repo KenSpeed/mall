@@ -11,6 +11,7 @@ public class ProductTestFixture {
         product.setDescription("Description");
         product.setCategory("Category");
         product.setPrice(100.0);
+        product.setStock(10000);
         return product;
     }
 
