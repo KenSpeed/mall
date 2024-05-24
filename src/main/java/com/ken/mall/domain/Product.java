@@ -15,17 +15,19 @@ public class Product {
     private String name;
     private double price;
     private String imageUrl;
-    private int stock;
+    private String sku;
+    private String description;
+    private String category;
 
     public Product() {
     }
 
-    public Product(String name, double price, Long id, String imageUrl, int stock) {
+    public Product(String name, double price, Long id, String imageUrl, String sku) {
         this.name = name;
         this.price = price;
         this.id = id;
         this.imageUrl = imageUrl;
-        this.stock = stock;
+        this.sku = sku;
     }
 
     public Long getId() {
@@ -60,11 +62,27 @@ public class Product {
         this.imageUrl = imageUrl;
     }
 
-    public int getStock() {
-        return stock;
+    public String getSku() {
+        return sku;
     }
 
-    public void setStock(int stock) {
-        this.stock = stock;
+    public void setSku(String sku) {
+        this.sku = sku;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
     }
 }
